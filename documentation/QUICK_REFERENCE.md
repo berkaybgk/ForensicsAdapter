@@ -279,15 +279,18 @@ ls -lh weights/ckpt_best.pth
 
 ### Issue: "Frames not found"
 **Solution**: Verify image paths in JSON match actual files
+
 ```python
 import json
-with open('dataset_jsons/Celeb-DF-v1-mini.json') as f:
+
+with open('../dataset_jsons/Celeb-DF-v1-mini.json') as f:
     data = json.load(f)
 # Check first frame path
 first_frame = data['Celeb-DF-v1-mini']['0-real']['test']['video_0000']['frames'][0]
 print(f"Checking: {first_frame}")
 # Verify it exists
 import os
+
 print(f"Exists: {os.path.exists(first_frame)}")
 ```
 
