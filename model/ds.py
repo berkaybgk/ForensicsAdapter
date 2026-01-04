@@ -115,6 +115,11 @@ class DS(nn.Module):
         xray_preds = [self.masked_xray_post_process(xray_pred, data_dict['if_boundary']) for xray_pred in xray_preds]
 
         clip_cls_output = self.clip_post_process(clip_output.float()).squeeze()   # N2
+        
+        # Ensure clip_cls_output is always 2D (batch_size, num_classes)
+        # squeeze() can remove batch dim when batch_size=1, causing dimension errors
+        if clip_cls_output.dim() == 1:
+            clip_cls_output = clip_cls_output.unsqueeze(0)
 
         outputs = {
             'xray_pred': xray_preds[-1],  # N 1 224 224

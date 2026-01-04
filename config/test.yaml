@@ -91,7 +91,8 @@ use_data_augmentation: false
 mean: [0.485, 0.456, 0.406]
 std: [0.229, 0.224, 0.225]
 
-test_dataset: [Celeb-DF-v1-mini]
+#test_dataset: [Celeb-DF-v1-mini]
+test_dataset: [face-filter-test]
 frame_num: {'train': 32, 'test': 32}
 test_batchSize: 2
 workers: 0
