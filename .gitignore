@@ -1,1 +1,5 @@
 ./face-filter-test/
+weights/
+trainer/
+datasets/
+.idea/

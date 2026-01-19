@@ -1,10 +1,13 @@
 # Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection (CVPR 2025)
 **👥 Authors: Xinjie Cui, [Yuezun Li](https://yuezunli.github.io/) (corresponding author), Ao Luo, Jiaran Zhou, Junyu Dong**
 
+---
 
+## Extended Work by me (Berkay)
 
-
-![Pipeline of the proposed Forensics Adapter. ](https://github.com/OUC-VAS/ForensicsAdapter/blob/main/figures/archi.png)
+Please see the short paper and poster presentation of the Forensics Adapter trials on the face retouching detection task:
+- Berkay - Poster - Detecting Facial Retouching.pdf
+- Berkay - Short Paper - Detecting Facial Retouching with Forensics Adapter.pdf
 
 
 ---
